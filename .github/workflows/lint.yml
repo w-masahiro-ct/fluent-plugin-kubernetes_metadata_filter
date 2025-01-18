@@ -1,13 +1,5 @@
 name: Lint
-on:
-  pull_request:
-    paths:
-      - '.github/workflows/lint.yml'
-      - '.rubocop.yml'
-      - 'Gemfile*'
-      - 'Rakefile'
-      - 'fluent-plugin-kubernetes_metadata_filter.gemspec'
-      - '**/*.rb'
+on: pull_request
 permissions:
   contents: read
 jobs:
